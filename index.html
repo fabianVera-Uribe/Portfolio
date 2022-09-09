@@ -11,7 +11,7 @@
   <body>
     <header class="header container">
       <nav class="nav">
-        <a href="/" class="nav__link">Home</a>
+        <a href="index.html" class="nav__link">Home</a>
         <a href="" class="nav__link">About</a>
         <a href="" class="nav__link">Works</a>
         <a href="" class="nav__link">Contact</a>
@@ -25,8 +25,9 @@
             <h1 class="info__name">Fabián Vera</h1>
             <h2 class="info__prof">Frontend Developer</h2>
             <p class="info__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus expedita quo at ullam obcaecati ducimus!
+              Developer with special taste for aesthetic. Self-critical and
+              perfectionist. <br />
+              HTMl, CSS, Sass.
             </p>
           </div>
           <div class="image"></div>
@@ -54,8 +55,8 @@
             <div class="card__info">
               <h2 class="info__title">Card Preview</h2>
               <p class="info__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-                veritatis?
+                Perfume card made for Frontend Mentor Challenge using HTML &
+                CSS.
               </p>
               <div class="info__links">
                 <a
@@ -89,8 +90,8 @@
             <div class="card__info card__info--odd">
               <h2 class="info__title info__title--odd">Page Layout</h2>
               <p class="info__description info__description--odd">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-                veritatis?
+                Page layout made for LarnU Bootcamp exercise. Made with Sass
+                pre-processor.
               </p>
               <div class="info__links">
                 <a
@@ -127,8 +128,8 @@
             <div class="card__info">
               <h2 class="info__title">Responsive Web</h2>
               <p class="info__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-                veritatis?
+                First page responsive for LarnU Bootcamp exercise applying
+                Flexbox in CSS.
               </p>
               <div class="info__links">
                 <a
@@ -149,6 +150,47 @@
           </div>
           <!-- CARD-->
         </div>
+      </section>
+
+      <section class="contact">
+        <h2 class="contact__title">Contact</h2>
+
+        <form class="form">
+          <div class="form__div">
+            <label class="form__label" for="name">Your Name</label>
+            <input
+              class="form__input form__input--text"
+              type="text"
+              id="name"
+              placeholder="name"
+            />
+          </div>
+
+          <div class="form__div form__div--textarea">
+            <label class="form__label" for="mail">Your Mail</label>
+            <input
+              class="form__input form__input--mail"
+              type="email"
+              id="mail"
+              placeholder="example@example.com"
+            />
+          </div>
+
+          <div class="form__div">
+            <label class="form__label" for="txtarea">Send me a message</label>
+            <textarea
+              class="form__input form__input--textarea"
+              name=""
+              id="txtarea"
+              cols="30"
+              rows="05"
+            ></textarea>
+          </div>
+
+          <div>
+            <button class="form__btn">Send</button>
+          </div>
+        </form>
       </section>
     </main>
   </body>

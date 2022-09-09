@@ -75,6 +75,10 @@ ul {
   color: var(--light-green);
   font-weight: bold;
 }
+.nav__link:active {
+  color: var(--light-green);
+  font-weight: bold;
+}
 
 /* ABOUT */
 .about {
@@ -125,6 +129,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5rem;
+  gap: 1rem;
 }
 
 .works__title::after {
@@ -165,6 +170,10 @@ ul {
   margin-left: -5rem;
   z-index: 1;
   border-radius: 0.5rem;
+  transition: transform 300ms;
+}
+.card__info:hover {
+  transform: scale(1.1);
 }
 .info__title {
   color: var(--lightest-slate);
@@ -202,4 +211,102 @@ ul {
   .info__description--odd {
     text-align: left;
   }
+}
+@media (max-width: 570px) {
+  .card__img {
+    display: none;
+  }
+  .card__info {
+    margin: 0;
+  }
+  .info__title,
+  .info__description {
+    text-align: center;
+  }
+}
+
+/* CONTACT */
+.contact__title {
+  font-size: 2.7rem;
+  color: var(--lightest-slate);
+  margin-bottom: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.contact__title::before {
+  content: "";
+  width: 80%;
+  height: 2px;
+  display: inline-block;
+  background-color: var(--light-green);
+  position: relative;
+}
+
+.form {
+  background-color: var(--light-darkgreen);
+  height: 70rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.form__div {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__div:last-of-type {
+  margin-bottom: 0;
+}
+.form__label {
+  width: 50%;
+  gap: 1rem;
+  text-align: left;
+  font-family: var(--font-roboto);
+  font-size: 1.5rem;
+}
+.form__input {
+  width: 50%;
+  height: 3.5rem;
+  background-color: var(--lightest-slate);
+  color: var(--dark-green);
+  padding: 1rem;
+  border: 2px solid var(--light-slate);
+  border-radius: 0.6rem;
+}
+.form__input:focus {
+  border: px solid var(--light-green);
+}
+.form__btn {
+  background-color: transparent;
+  border: 2px solid var(--light-green);
+  border-radius: 0.6rem;
+  color: var(--light-green);
+  padding: 1.5rem 2rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.form__btn:hover {
+  background-color: var(--light-green-tint);
+}
+
+@media (min-width: 768px) {
+  .form__btn {
+    width: 20rem;
+  }
+}
+
+.form__div--textarea {
+  display: flex;
+}
+.form__input--textarea {
+  height: auto;
+  resize: none;
 }
